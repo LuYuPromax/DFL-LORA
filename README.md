@@ -9,4 +9,6 @@ Recently, Federated Learning (FL) has been increasingly integrated with LoRA. As
 
 ![image](https://github.com/user-attachments/assets/c07d2208-b6f9-4399-a9a8-c9fba72f8503)
 
-However, designing an efficient and robust framework that holistically integrates DFL with LoRA presents significant challenges.
+However, designing an efficient and robust framework that holistically integrates DFL with LoRA presents significant challenges.In the FL setting, the centralized parameter server can perform the global aggregation, ensuring precise synchronization across all local low-rank matrices (and the local FMs). In DFL, however, the absence of a centralized server results in a peer-to-peer distributed consensus mechanism that is prone to consensus errors, leading to divergent local low-rank matrices B and A among clients. These consensus errors are exacerbated after the matrix multiplication in local FMs. As illustrated in Fig. 1(c), a minor average consensus error of 1.33 in B and A can balloon to an error of 25.78 in the FMs (specifically, the product BA), resulting in the degradation of model accuracy.
+
+
