@@ -77,6 +77,8 @@ Parameter Description
 - **`--batch_size` (int, default: 128)**: Batch size for each client.  
 - **`--log_path` (str, default: "federated_training.log")**: Path to save the log file.
 
+The training of the llama model is similar.
+
 ### Notes
 - Ensure that your datasets are correctly placed and paths are properly configured in the scripts.
 - You can modify the default values of parameters according to your experiment setup.
