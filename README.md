@@ -75,4 +75,8 @@ Parameter Description
 - **`--name` (str)**: Name used to generate the weight matrix.  
 - **`--num_rounds` (int, default: 256)**: Number of federated learning rounds.  
 - **`--batch_size` (int, default: 128)**: Batch size for each client.  
-- **`--log_path` (str, default: "federated_training.log")**: Path to save the log file.  
+- **`--log_path` (str, default: "federated_training.log")**: Path to save the log file.
+
+### Notes
+- Ensure that your datasets are correctly placed and paths are properly configured in the scripts.
+- You can modify the default values of parameters according to your experiment setup.
