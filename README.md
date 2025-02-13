@@ -1,6 +1,6 @@
-# ConLoRA
+# DFL-LoRA
 
-ConLoRA is a platform for distributed fine-tuning of large models in a fully decentralized federated learning scenario. This platform allows you to perform fine-tuning of large models within a completely decentralized network. In particular, ConLoRA addresses inherent error issues in decentralized federated learning by providing an option to mitigate the consensus error amplification effect caused by LoRA. You can freeze the A matrix during training to further reduce this error.
+DFL-LoRA is a platform for distributed fine-tuning of large models in a fully decentralized federated learning scenario. This platform allows you to perform fine-tuning of large models within a completely decentralized network. In particular, DFL-LoRA addresses inherent error issues in decentralized federated learning by providing an option to mitigate the consensus error amplification effect caused by LoRA. You can freeze the A matrix during training to further reduce this error.
 
 ## How to Use
 
@@ -9,7 +9,7 @@ ConLoRA is a platform for distributed fine-tuning of large models in a fully dec
 Clone the repository to your local folder:
 
 ```bash
-git clone https://github.com/LuYuPromax/ConLoRA.git
+git clone https://github.com/LuYuPromax/DFL-LoRA.git
 ```
 
 ### 2. Create environment
@@ -28,7 +28,7 @@ pip install -r requirement.txt
 
 ### Datasets
 
-Currently, ConLoRA supports some GLUE datasets and the GSM8k dataset. To use them, follow these steps:
+Currently, DFL-LoRA supports some GLUE datasets and the GSM8k dataset. To use them, follow these steps:
 
 1. Go to the `utils` folder.
 
@@ -70,7 +70,7 @@ Parameter Description
 - **`--lora_r` (int)**: LoRA rank for LoRA layers.  
 - **`--lora_alpha` (int)**: LoRA alpha for LoRA layers.  
 - **`--target_modules` (str)**: Comma-separated list of target modules for LoRA layers.  
-- **`--training_type` (str)**: Type of training (`LoRA` or `ConLoRA`).  
+- **`--training_type` (str)**: Type of training (`LoRA` or `DFL-LoRA`).  
 - **`--dataset_type` (str)**: Dataset type (`sst2`, `mnli`, or `qnli`).  
 - **`--name` (str)**: Name used to generate the weight matrix.  
 - **`--num_rounds` (int, default: 256)**: Number of federated learning rounds.  
